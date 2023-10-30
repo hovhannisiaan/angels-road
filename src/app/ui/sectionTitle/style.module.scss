@@ -1,0 +1,27 @@
+.title {
+  position: relative;
+  margin-bottom: 1.562rem;
+
+  font-size: 4.125rem;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+.line {
+  position: absolute;
+  top: calc(100% + 1.312rem);
+
+  width: 6.375rem;
+  height: 0.25rem;
+
+  background-color: var(--background-orange);
+}
+
+.white {
+  color: var(--text-white);
+}
+
+.black {
+  color: var(--text-black);
+}
