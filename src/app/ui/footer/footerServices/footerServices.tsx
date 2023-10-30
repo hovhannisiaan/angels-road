@@ -1,11 +1,12 @@
 import styles from './style.module.scss';
 import Link from "next/link";
+import {oswald, poppins} from "@/app/ui/fonts";
 
 export default function FooterService() {
     return (
         <div>
-            <h3 className={styles.title}>special services</h3>
-            <ul className={styles.linkList}>
+            <h3 className={`${oswald.className} ${styles.title}`}>special services</h3>
+            <ul className={`${poppins.className} ${styles.linkList}`}>
                 <li className={styles.linkItem}>
                     <Link className={styles.link} href={'/'}>Order fullfillment / Pick & Pack</Link>
                 </li>

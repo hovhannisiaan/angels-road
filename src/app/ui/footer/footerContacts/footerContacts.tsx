@@ -1,6 +1,6 @@
 import styles from "./style.module.scss";
 import Link from "next/link";
-import {oswald} from "@/app/ui/fonts";
+import {oswald,poppins} from "@/app/ui/fonts";
 
 const smmLinks = [
     {icon: 'twitter', href: 'https://twitter.com'},
@@ -16,7 +16,7 @@ export default function FooterContacts() {
                 <Link href={'/'} className={styles.link}>transportation</Link>
                 <Link href={'/'} className={styles.link}>contact us</Link>
             </div>
-            <p className={styles.mail}>info@gmail.com</p>
+            <p className={`${poppins.className} ${styles.mail}`}>info@gmail.com</p>
             <ul className={styles.smmList}>
                 {smmLinks.map((link) => {
                     return (
