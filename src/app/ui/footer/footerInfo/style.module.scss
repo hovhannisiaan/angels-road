@@ -1,0 +1,27 @@
+.footerInfo {
+  width: 23.571%;
+  border-right: 1px solid var(--border-white);
+}
+
+.footerInfoImage {
+  margin-bottom: 1rem;
+}
+
+.footerInfoTitle {
+  margin-bottom: 0.875rem;
+
+  color: var(--text-white);
+
+  font-size: 1.312rem;
+  line-height: 0.85;
+  text-transform: uppercase;
+}
+
+.footerInfoDesc {
+  max-width: 14.5rem;
+
+  color: var(--text-white);
+
+  font-size: 1rem;
+  line-height: 1.7;
+}

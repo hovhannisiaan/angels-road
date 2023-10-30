@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: auto;
+  padding-top: 2.437rem;
+  padding-bottom: 4.312rem;
+  background-color: var(--background-gray);
+}
+
+.footerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 88.0555%;
+}
+
+.footerRight {
+  display: flex;
+  justify-content: space-between;
+  width: 65.238%;
+}

@@ -1,0 +1,29 @@
+.title {
+  margin-bottom: 0.875rem;
+
+  color: var(--text-white);
+
+  font-size: 1.312rem;
+  line-height: 1.7;
+  text-transform: uppercase;
+}
+
+.linkList {
+  padding: 0;
+  list-style-type: none;
+}
+
+.linkItem {
+  &:not(:last-child) {
+    margin-bottom: 0.875rem;
+  }
+}
+
+.link {
+  color: var(--text-gray);
+
+  font-size: 0.937rem;
+  font-weight: 500;
+  line-height: 2;
+  text-decoration: none;
+}

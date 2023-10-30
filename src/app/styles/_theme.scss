@@ -1,0 +1,24 @@
+$primaryOrange: rgba(225, 148, 82, 1);
+$primaryWhite: rgba(255, 255, 255, 1);
+$primaryBlack: rgba(0, 0, 0, 1);
+$primaryGrayDark: rgba(41, 41, 41, 1);
+$primaryBorder: rgba(255, 255, 255, 0.21);
+$primaryGray: rgba(158, 158, 158, 1);
+
+$transitionMedium: 400ms;
+
+:root {
+  --text-white: #{$primaryWhite};
+  --text-black: #{$primaryBlack};
+  --text-orange: #{$primaryOrange};
+  --text-gray: #{$primaryGray};
+
+  --background-orange: #{$primaryOrange};
+  --background-black: #{$primaryBlack};
+  --background-white: #{$primaryWhite};
+  --background-gray: #{$primaryGrayDark};
+
+  --border-white: #{$primaryBorder};
+
+  --transition: #{$transitionMedium};
+}
