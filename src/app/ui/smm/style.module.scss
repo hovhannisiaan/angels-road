@@ -1,0 +1,34 @@
+.smmList {
+  display: flex;
+  justify-content: space-between;
+
+  list-style-type: none;
+  padding: 0;
+}
+
+.smmItem {
+}
+
+.smmLink {
+  display: block;
+  position: relative;
+  width: 1.125rem;
+
+
+  &::before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+
+  svg {
+    transition: fill var(--transition);
+    fill: var(--text-white);
+  }
+
+  &:hover {
+    svg {
+      fill: var(--text-orange);
+    }
+  }
+}

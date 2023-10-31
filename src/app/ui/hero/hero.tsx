@@ -10,9 +10,9 @@ export default function Hero() {
             <Image className={styles.heroImage} src={heroImg} alt={'truck'} />
             <h1 className={`${oswald.className} ${styles.heroTitle}`}>
                 we are
-                <h2 className={styles.heroCompanyName}>
+                <p className={styles.heroCompanyName}>
                     ANGELS ROAD inc
-                </h2>
+                </p>
             </h1>
         </div>
     )

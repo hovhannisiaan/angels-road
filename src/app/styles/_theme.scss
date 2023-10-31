@@ -1,5 +1,6 @@
 $primaryOrange: rgba(225, 148, 82, 1);
 $primaryOrange30: rgba(225, 148, 82, .3);
+$primaryOrange70: rgba(225, 148, 82, .7);
 $primaryWhite: rgba(255, 255, 255, 1);
 $primaryBlack: rgba(0, 0, 0, 1);
 $primaryGrayDark: rgba(41, 41, 41, 1);
@@ -16,6 +17,7 @@ $transitionMedium: 400ms;
   --text-gray: #{$primaryGray};
 
   --background-orange: #{$primaryOrange};
+  --background-orange-70: #{$primaryOrange70};
   --background-black: #{$primaryBlack};
   --background-white: #{$primaryWhite};
   --background-gray: #{$primaryGrayDark};

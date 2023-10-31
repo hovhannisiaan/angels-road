@@ -1,0 +1,148 @@
+.contacts {
+  position: relative;
+  margin-top: 5.187rem;
+  margin-bottom: 8rem;
+}
+
+.content {
+  padding-top: 7.875rem;
+  padding-bottom: 7.125rem;
+  padding-left: 6.181%;
+  width: 68.0555%;
+  background-color: var(--background-gray);
+}
+
+.titleWrapper {
+  margin-bottom: 3.625rem;
+}
+
+.subTitle {
+  margin-bottom: 0.812rem;
+
+  color: var(--text-white);
+
+  font-size:  1.625rem;
+  line-height: 0.69;
+  text-transform: uppercase;
+}
+
+.text {
+  display: block;
+  max-width: 26.091%;
+
+  color: var(--text-white);
+
+  font-size: 1rem;
+}
+
+.address {
+  margin-bottom: 0.886rem;
+}
+
+.contentMail {
+  margin-bottom: 1.312rem;
+}
+
+.smmWrapper {
+  width: 16.766%;
+}
+
+.mail {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  height: 84.081%;
+  width: 57.222%;
+
+  padding-left: 5.062rem;
+  padding-right: 5.062rem;
+
+  background-color: var(--background-orange);
+}
+
+.mailContent {
+  width: 60.436%;
+}
+
+.mailSubscribe {
+  margin-bottom: 0.875rem;
+
+  color: var(--text-white);
+
+  font-size: 0.875rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+.mailTitle {
+  margin-bottom: 1.375rem;
+
+  color: var(--text-white);
+
+  font-size: 2.25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+}
+
+.mailDesc {
+  margin-bottom: 1.937rem;
+
+  color: var(--text-white);
+
+  font-size: 0.875rem;
+  line-height: 2.14;
+}
+
+.mailForm {
+  width: 100%;
+}
+
+.mailLabel {
+  position: relative;
+  display: block;
+}
+
+.mailInput {
+  display: block;
+  width: 100%;
+
+  color: var(--text-white);
+  border: 1px solid var(--text-white);
+  outline: none;
+  padding: 0.875rem 2.312rem 0.875rem 1.312rem;
+
+  background-color: transparent;
+
+  &::placeholder {
+    color: var(--text-white);
+
+    font-size: 0.875rem;
+    font-weight: 300;
+  }
+}
+
+.mailBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1.312rem;
+  width: 1.008rem;
+  height: 1.125rem;
+
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    fill: var(--text-white);
+  }
+}

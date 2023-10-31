@@ -1,6 +1,7 @@
 import styles from './style.module.scss';
 import Link from "next/link";
 import {oswald, poppins} from "@/app/ui/fonts";
+import Smm from "@/app/ui/smm/smm";
 
 export default function FooterService() {
     return (
@@ -17,6 +18,7 @@ export default function FooterService() {
                     <Link className={styles.link} href={'/'}>Warehousing Services</Link>
                 </li>
             </ul>
+
         </div>
     )
 }

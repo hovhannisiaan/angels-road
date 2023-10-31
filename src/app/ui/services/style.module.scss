@@ -11,8 +11,11 @@
 }
 
 .cardsContainer {
+  position: relative;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
+  margin-right: 4.599%;
 }
 
 .card {
