@@ -1,7 +1,7 @@
 import styles from "./style.module.scss";
-import SectionTitle from "@/app/ui/sectionTitle/sectionTitle";
+import SectionTitle from "@/app/ui/uiKit/sectionTitle/sectionTitle";
 import Image from "next/image";
-import testimonialImg from "@/../public/img/testimonial/testimonialImage.jpeg";
+import testimonialImg from "../../../../../public/img/testimonial/testimonialImage.jpeg";
 import {poppins, oswald} from "@/app/ui/fonts";
 
 export default function Advantages() {

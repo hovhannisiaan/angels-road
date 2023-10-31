@@ -1,17 +1,19 @@
 import Image from 'next/image'
-import styles from './page.module.css'
-import Hero from "@/app/ui/hero/hero";
-import AboutUs from "@/app/ui/aboutUs/aboutUs";
-import Services from "@/app/ui/services/services";
-import Advantages from "@/app/ui/advantages/advantages";
-import Banner from "@/app/ui/banner/banner";
-import Contacts from "@/app/ui/contacts/contacts";
+import styles from './page.module.scss'
+import Hero from "@/app/ui/home/hero/hero";
+import AboutUs from "@/app/ui/home/aboutUs/aboutUs";
+import Services from "@/app/ui/home/services/services";
+import Advantages from "@/app/ui/home/advantages/advantages";
+import Banner from "@/app/ui/home/banner/banner";
+import Contacts from "@/app/ui/home/contacts/contacts";
 
 export default function Home() {
     return (
         <main>
             <Hero/>
-            <AboutUs/>
+            <section className={styles.aboutUsWrapper}>
+            <AboutUs inner={false}/>
+            </section>
             <Services/>
             <Advantages/>
             <Banner />

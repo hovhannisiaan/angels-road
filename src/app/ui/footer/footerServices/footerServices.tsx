@@ -1,7 +1,7 @@
 import styles from './style.module.scss';
 import Link from "next/link";
 import {oswald, poppins} from "@/app/ui/fonts";
-import Smm from "@/app/ui/smm/smm";
+import Smm from "@/app/ui/uiKit/smm/smm";
 
 export default function FooterService() {
     return (

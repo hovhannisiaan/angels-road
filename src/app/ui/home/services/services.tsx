@@ -1,5 +1,5 @@
 import styles from "./style.module.scss";
-import SectionTitle from "@/app/ui/sectionTitle/sectionTitle";
+import SectionTitle from "@/app/ui/uiKit/sectionTitle/sectionTitle";
 import Image from "next/image";
 
 export default function Services() {

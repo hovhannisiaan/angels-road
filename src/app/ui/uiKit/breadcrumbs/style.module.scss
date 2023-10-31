@@ -1,0 +1,32 @@
+.list {
+  display: flex;
+  list-style-type: none;
+}
+
+.item {}
+
+.link {
+  color: var(--text-black);
+  transition: color var(--transition);
+
+  font-size: 1.187rem;
+  line-height: 1.89;
+  text-decoration: none;
+
+  &:hover:not(.text) {
+    color: var(--text-orange);
+  }
+
+  &.text {
+    font-weight: 500;
+    color: var(--text-orange);
+  }
+}
+
+.seperator {
+  color: var(--text-black);
+
+  font-size: 1.187rem;
+  line-height: 1.89;
+  text-decoration: none;
+}

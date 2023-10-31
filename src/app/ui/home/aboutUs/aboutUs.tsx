@@ -1,12 +1,13 @@
 import styles from './style.module.scss';
-import SectionTitle from "@/app/ui/sectionTitle/sectionTitle";
+import SectionTitle from "@/app/ui/uiKit/sectionTitle/sectionTitle";
 import Image from "next/image";
-import aboutImage from "@/../public/img/about/aboutImg.jpeg";
+import aboutImage from "../../../../../public/img/about/aboutImg.jpeg";
 import {poppins} from "@/app/ui/fonts";
+import Link from "next/link";
 
-export default function AboutUs() {
+export default function AboutUs({inner} : {inner : boolean}) {
     return (
-        <section className={styles.aboutUs}>
+        <div className={styles.aboutUs}>
             <div className="page-container">
                 <div className={styles.aboutUsContainer}>
                     <div className={styles.content}>
@@ -22,7 +23,7 @@ export default function AboutUs() {
                             also the
                             leap into electronic typesetting, remaining essentially unchanged. It was popularised
                         </p>
-                        <button className={styles.contentBtn}>view more</button>
+                        {!inner && <Link href={'/about-us'} className={styles.contentBtn}>view more</Link>}
                     </div>
                     <div className={styles.imageContainer}>
                         <div className="img-container">
@@ -31,6 +32,6 @@ export default function AboutUs() {
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     )
 }

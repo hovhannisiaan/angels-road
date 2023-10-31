@@ -1,8 +1,8 @@
 import styles from './style.module.scss';
 import Image from "next/image";
-import bannerImg from "@/../public/img/banner/bannerImage.jpeg"
+import bannerImg from "../../../../../public/img/banner/bannerImage.jpeg"
 import {oswald} from "@/app/ui/fonts";
-import circleText from '@/../public/img/banner/animation.png';
+import circleText from '../../../../../public/img/banner/animation.png';
 export default function Banner() {
     return (
         <section className={styles.banner}>

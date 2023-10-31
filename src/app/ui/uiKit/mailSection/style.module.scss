@@ -1,0 +1,39 @@
+.mail {
+
+}
+
+.mailContainer {
+  position: relative;
+  padding: 7.625rem 4.937rem;
+  background-color: var(--background-gray);
+}
+
+.mailContentWrapper {
+  width: 39.635%;
+  max-width: 543px;
+}
+
+.bannerCircle {
+  opacity: 50%;
+  position: absolute;
+  top: 50%;
+  right: 125px;
+  transform: translateY(-49%);
+  width: 26.219%;
+  animation: circleText 4200ms linear infinite;
+
+  &::before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+}
+
+@keyframes circleText {
+  from {
+    transform: translateY(-49%) rotate(0);
+  }
+  to {
+    transform: translateY(-49%) rotate(360deg);
+  }
+}

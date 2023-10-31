@@ -1,6 +1,6 @@
 import styles from './style.module.scss';
 import Image from "next/image";
-import heroImg from "../../../../public/img/hero/hero.jpeg";
+import heroImg from "../../../../../public/img/hero/hero.jpeg";
 import {oswald} from "@/app/ui/fonts";
 
 export default function Hero() {
