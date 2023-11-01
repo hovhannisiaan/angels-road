@@ -1,6 +1,9 @@
 .list {
   display: flex;
   list-style-type: none;
+
+  padding: 0;
+  transform: translateX(-0.812rem);
 }
 
 .item {}

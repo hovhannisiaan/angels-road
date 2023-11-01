@@ -3,21 +3,13 @@ import SectionTitle from "@/app/ui/uiKit/sectionTitle/sectionTitle";
 import Smm from "@/app/ui/uiKit/smm/smm";
 import {oswald,poppins} from "@/app/ui/fonts";
 import MailContent from "@/app/ui/uiKit/mailContent/mailContent";
+import ContactContent from "@/app/ui/uiKit/contactContent/contactContent";
 
 export default function Contacts() {
     return (
         <section className={styles.contacts}>
-            <div className={styles.content}>
-                <div className={styles.titleWrapper}>
-                    <SectionTitle title={'Contacts'} color={'white'} />
-                </div>
-                <h3 className={`${oswald.className} ${styles.subTitle}`}>Main office</h3>
-                <p className={`${poppins.className} ${styles.text} ${styles.address}`}>1111 46e avenue, US Bla bla bla
-                    bla  :D</p>
-                <p className={`${poppins.className} ${styles.text} ${styles.contentMail}`}>info@gmail.com</p>
-                <div className={styles.smmWrapper}>
-                <Smm />
-                </div>
+            <div className={styles.contentWrapper}>
+                <ContactContent width={980} />
             </div>
             <div className={styles.mail}>
                 <div className={styles.mailContent}>

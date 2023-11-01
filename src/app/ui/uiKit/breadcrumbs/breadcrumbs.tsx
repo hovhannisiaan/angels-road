@@ -13,7 +13,7 @@ const Breadcrumb = () => {
     const pathNames = paths.split('/').filter(path => path)
 
     return (
-        <div>
+        <div className="page-container">
             <ul className={styles.list}>
                 <li className={styles.item}><Link className={`${poppins.className} ${styles.link}`} href={'/'}>Homepage</Link></li>
                 {pathNames.length > 0 && <li className={styles.seperator}>&nbsp;/&nbsp;</li>}
