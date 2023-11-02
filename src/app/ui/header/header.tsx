@@ -6,6 +6,7 @@ import logo from "../../../../public/Logo.svg";
 import Nav from "@/app/ui/header/nav/nav";
 import {useEffect, useState} from "react";
 import {usePathname} from "next/navigation";
+import Link from "next/link";
 
 export default function Header() {
     const [scrolled, setScrolled] = useState(true);
@@ -15,6 +16,7 @@ export default function Header() {
     useEffect(() => {
         path === '/' ? setInnerPage(false) : setInnerPage(true);
         !innerPage ? setScrolled(false) : setScrolled(true);
+
         function checkScroll() {
             if (window.scrollY !== 0) {
                 setScrolled(true)
@@ -35,12 +37,14 @@ export default function Header() {
         <>
             <header className={`${styles.header}${scrolled ? ` ${styles.scrolled}` : ''}`}>
                 <div className={styles.headerContainer}>
-                    <Image
-                        src={logo}
-                        alt={"Angels Road logo"}
-                        width={69}
-                        height={69}
-                    />
+                    <Link href={'/'}>
+                        <Image
+                            src={logo}
+                            alt={"Angels Road logo"}
+                            width={69}
+                            height={69}
+                        />
+                    </Link>
                     <Nav/>
 
                 </div>

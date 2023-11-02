@@ -2,7 +2,7 @@ import styles from './style.module.scss';
 import SectionTitle from "@/app/ui/uiKit/sectionTitle/sectionTitle";
 import Image from "next/image";
 import aboutImage from "../../../../../public/img/about/aboutImg.jpeg";
-import {poppins} from "@/app/ui/fonts";
+import {goldman, poppins} from "@/app/ui/fonts";
 import Link from "next/link";
 
 export default function AboutUs({inner} : {inner : boolean}) {
@@ -23,7 +23,7 @@ export default function AboutUs({inner} : {inner : boolean}) {
                             also the
                             leap into electronic typesetting, remaining essentially unchanged. It was popularised
                         </p>
-                        {!inner && <Link href={'/about-us'} className={styles.contentBtn}>view more</Link>}
+                        {!inner && <Link href={'/about-us'} className={`${goldman.className} ${styles.contentBtn}`}>view more</Link>}
                     </div>
                     <div className={styles.imageContainer}>
                         <div className="img-container">

@@ -3,7 +3,7 @@
 import styles from './style.module.scss';
 import Link from "next/link";
 import {usePathname} from "next/navigation";
-import {oswald} from "@/app/ui/fonts";
+import {goldman} from "@/app/ui/fonts";
 
 const links = [
     {name: 'homepage', href: '/'},
@@ -22,7 +22,7 @@ export default function NavLinks() {
                 links.map((link) => {
                     return (
                         <Link key={link.name}
-                              className={`${oswald.className} ${styles.navLink} ${pathname === link.href ? ` ${styles.linkActive}` : ''}`}
+                              className={`${goldman.className} ${styles.navLink} ${pathname === link.href ? ` ${styles.linkActive}` : ''}`}
                               href={link.href}>
                             {link.name}
                         </Link>

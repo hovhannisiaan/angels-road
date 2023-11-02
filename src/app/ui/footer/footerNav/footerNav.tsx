@@ -13,7 +13,7 @@ export default function FooterNav() {
                     <Link className={styles.navLink} href={'/about-us'}>about us</Link>
                 </li>
                 <li className={styles.navItem}>
-                    <Link className={styles.navLink} href={'/'}>services</Link>
+                    <Link className={styles.navLink} href={'/services'}>services</Link>
                 </li>
             </ul>
         </div>

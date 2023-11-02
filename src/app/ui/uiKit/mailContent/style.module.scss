@@ -1,7 +1,7 @@
 .mailSubscribe {
   margin-bottom: 0.875rem;
 
-  color: var(--text-white);
+  color: var(--text-gray-dark);
 
   font-size: 0.875rem;
   font-weight: 300;
@@ -12,7 +12,7 @@
 .mailTitle {
   margin-bottom: 1.375rem;
 
-  color: var(--text-white);
+  color: var(--text-gray-dark);
 
   font-size: 2.25rem;
   font-weight: 500;
@@ -23,7 +23,7 @@
 .mailDesc {
   margin-bottom: 1.937rem;
 
-  color: var(--text-white);
+  color: var(--text-gray-dark);
 
   font-size: 0.875rem;
   line-height: 2.14;
@@ -42,15 +42,15 @@
   display: block;
   width: 100%;
 
-  color: var(--text-white);
-  border: 1px solid var(--text-white);
+  color: var(--text-gray-dark);
+  border: 1px solid var(--text-gray-dark);
   outline: none;
   padding: 0.875rem 2.312rem 0.875rem 1.312rem;
 
   background-color: transparent;
 
   &::placeholder {
-    color: var(--text-white);
+    color: var(--text-gray-dark);
 
     font-size: 0.875rem;
     font-weight: 300;
@@ -74,6 +74,6 @@
   svg {
     width: 100%;
     height: 100%;
-    fill: var(--text-white);
+    fill: var(--text-gray-dark);
   }
 }

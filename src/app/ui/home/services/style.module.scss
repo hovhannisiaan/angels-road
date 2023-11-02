@@ -15,23 +15,22 @@
   z-index: 10;
   display: flex;
   justify-content: space-between;
-  margin-right: 4.599%;
+  margin-right: 5.666%;
 }
 
 .card {
   position: relative;
-  width: 27.299%;
+  width: 26.943%;
 
   &::before {
     content: '';
     display: block;
-    padding-top: 100%;
+    padding-top: 142.95%;
   }
 }
 
 .cardInner {
   height: 100%;
   width: 100%;
-  background-color: var(--text-gray);
-  opacity: 54%;
+  background-color: var(--background-gray);
 }

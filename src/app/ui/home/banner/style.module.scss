@@ -50,7 +50,7 @@
 
 .bannerTitle {
   color: var(--background-orange-70);
-  font-size: 12.5em;
+  font-size: 8.75em;
   font-weight: 700;
   letter-spacing: 0.25rem;
   text-transform: uppercase;
@@ -63,7 +63,6 @@
   right: 0;
   transform: translateY(-49%) translateX(36%);
   width: 26.219%;
-  animation: circleText 4200ms linear infinite;
 
   &::before {
     content: '';

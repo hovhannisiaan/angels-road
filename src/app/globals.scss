@@ -21,10 +21,15 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .hidden {
@@ -32,7 +37,7 @@ body {
 }
 
 .page-container {
-    width: 95.138%;
+    width: 83.333%;
     max-width: 1700px;
     margin: 0 auto;
 }
