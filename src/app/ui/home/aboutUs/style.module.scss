@@ -30,6 +30,12 @@
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  transition: all var(--transition);
+
+  &:hover {
+    background-color: var(--background-orange);
+    color: var(--text-white);
+  }
 }
 
 .contentDesc {
