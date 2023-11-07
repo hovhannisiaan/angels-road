@@ -36,17 +36,19 @@ export default function Header() {
     return (
         <>
             <header className={`${styles.header}${scrolled ? ` ${styles.scrolled}` : ''}`}>
-                <div className={styles.headerContainer}>
-                    <Link href={'/'}>
-                        <Image
-                            src={logo}
-                            alt={"Angels Road logo"}
-                            width={69}
-                            height={69}
-                        />
-                    </Link>
-                    <Nav/>
+                <div className="page-container">
+                    <div className={styles.headerContainer}>
+                        <Link href={'/'}>
+                            <Image
+                                src={logo}
+                                alt={"Angels Road logo"}
+                                width={69}
+                                height={69}
+                            />
+                        </Link>
+                        <Nav/>
 
+                    </div>
                 </div>
             </header>
         </>

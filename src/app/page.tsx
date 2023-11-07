@@ -6,6 +6,7 @@ import Services from "@/app/ui/home/services/services";
 import Advantages from "@/app/ui/home/advantages/advantages";
 import Banner from "@/app/ui/home/banner/banner";
 import Contacts from "@/app/ui/home/contacts/contacts";
+import Testimonial from "@/app/ui/home/testimonial";
 
 export default function Home() {
     return (
@@ -15,8 +16,9 @@ export default function Home() {
             <AboutUs inner={false}/>
             </section>
             <Services/>
+            <Testimonial />
             <Advantages/>
-            <Banner />
+            {/*<Banner />*/}
             <Contacts />
         </main>
     )

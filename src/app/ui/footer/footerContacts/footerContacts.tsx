@@ -8,7 +8,7 @@ export default function FooterContacts() {
     return (
         <div>
             <div className={oswald.className}>
-                <Link href={'/transportation'} className={styles.link}>transportation</Link>
+                <Link href={'/warehouse'} className={styles.link}>transportation</Link>
                 <Link href={'/contacts'} className={styles.link}>contact us</Link>
             </div>
             <p className={`${poppins.className} ${styles.mail}`}>info@gmail.com</p>

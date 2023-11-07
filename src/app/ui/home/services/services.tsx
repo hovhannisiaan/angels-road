@@ -8,7 +8,7 @@ export default function Services() {
             <div className="page-container">
                 <div className={styles.servicesContainer}>
                     <div className={styles.titleWrapper}>
-                        <SectionTitle title={'services'} color={'black'} />
+                        <SectionTitle title={'warehouse services'} color={'black'} />
                     </div>
                     <div className={styles.cardsContainer}>
                         <div className={styles.card}>

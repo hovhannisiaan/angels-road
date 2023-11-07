@@ -4,10 +4,16 @@ import styles from "./style.module.scss";
 import {goldman} from "@/app/ui/fonts";
 import {motion, useAnimate, useScroll} from "framer-motion";
 import {useRef} from "react";
+import clsx from "clsx";
 
-export default function SectionTitle({title, color = 'black'}: { title: string; color: string }) {
+type titleProps = {
+    title: string,
+    color: string,
+    size?: "big" | "medium" | "small"
+}
+
+export default function SectionTitle({title, color = 'black', size = 'big'}: titleProps) {
     const target = useRef(null)
-
     useAnimate()
     return (
         <>
@@ -18,7 +24,12 @@ export default function SectionTitle({title, color = 'black'}: { title: string; 
                 transition={{duration: 0.8, ease: 'easeOut'}}
             >
                 <h2 ref={target}
-                    className={`${goldman.className} ${styles.title} ${color === "white" ? styles.white : styles.black}`}>
+                    className={`${goldman.className} ${styles.title} ${color === "white" ? styles.white : styles.black} ${clsx([{
+                        [styles.big]: size === 'big',
+                        [styles.medium]: size === 'medium',
+                        [styles.small]: size === 'small'
+                    }])}`}
+                >
                     {title}
                 </h2>
             </motion.div>
@@ -28,7 +39,7 @@ export default function SectionTitle({title, color = 'black'}: { title: string; 
                 viewport={{once: true}}
                 transition={{duration: 0.8, ease: 'easeOut'}}
             >
-            <div className={styles.line}></div>
+                <div className={styles.line}></div>
             </motion.div>
         </>
     )

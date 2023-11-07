@@ -30,7 +30,6 @@ const circle = useRef(null)
 
     const rotate = useTransform(scrollYProgress, [-100, 100], [-360, 360]);
 
-    console.log(rotate)
     // @ts-ignore
     return (
         <section ref={target} className={styles.banner}>

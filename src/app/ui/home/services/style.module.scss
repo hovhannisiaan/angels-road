@@ -1,6 +1,6 @@
 .services {
-  padding-top: 3.75rem;
-  padding-bottom: 5.625rem;
+  margin-top: 9.375rem;;
+  margin-bottom: -3.5rem;
 }
 
 .servicesContainer {
@@ -15,17 +15,16 @@
   z-index: 10;
   display: flex;
   justify-content: space-between;
-  margin-right: 5.666%;
 }
 
 .card {
   position: relative;
-  width: 26.943%;
+  width: 29.083%;
 
   &::before {
     content: '';
     display: block;
-    padding-top: 142.95%;
+    padding-top: 124.928%;
   }
 }
 

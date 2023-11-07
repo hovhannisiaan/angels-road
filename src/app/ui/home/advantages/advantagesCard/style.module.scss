@@ -1,0 +1,41 @@
+.card {
+  width: 28.666%;
+  padding: 4.562rem 2.312rem;
+
+  background-color: var(--background-white);
+  box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.10);
+}
+
+.cardIcon {
+  position: relative;
+  width: 2.218rem;
+  height: 2.307rem;
+  margin-bottom: 0.625rem;
+
+  svg {
+    max-height: 100%;
+    max-width: 100%;
+    fill: var(--background-orange);
+  }
+}
+
+.cardTitle {
+  margin-bottom: 0.625rem;
+
+  color: var(--text-orange);
+
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 2.94;
+  text-transform: capitalize;
+  letter-spacing: 1.8px;
+}
+
+.cardText {
+  height: 9rem;
+
+  color: var(--text-black);
+
+  font-size: 1rem;
+  letter-spacing: 1.8px;
+}

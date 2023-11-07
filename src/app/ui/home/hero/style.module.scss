@@ -1,6 +1,7 @@
 .hero {
   position: relative;
   height: 50rem;
+  font-size: 1.111vw;
 }
 
 .heroOpacity {
@@ -26,30 +27,32 @@
 
 .heroTitle {
   position: absolute;
-  width: max-content;
+  width: min-content;
   top: 50%;
   left: 50%;
   z-index: 2;
 
   transform: translateX(-50%) translateY(-50%);
-  color: var(--text-orange-30);
+  color: var(--text-white);
+  opacity: 30%;
 
-  font-size: 19.375rem;
+  font-size: 12.5em;
   font-weight: 700;
   line-height: 0.93;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .heroCompanyName {
   position: absolute;
   bottom: 0;
   right: 0;
-  transform: translateY(50%) translateX(40%);
+  //transform: translateY(50%) translateX(40%);
 
-  color: var(--text-white);
+  color: var(--text-orange);
 
-  font-size: 4.25rem;
+  font-size: 0.34em;
   font-weight: 300;
-  line-height: 1;
+  line-height: 1.5;
   letter-spacing: 1.4px;
 }
