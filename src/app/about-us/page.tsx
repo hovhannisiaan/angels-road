@@ -8,7 +8,6 @@ import Facts from "@/app/ui/aboutUsPage/facts/facts";
 export default function Page() {
     return (
         <div className='inner-page-container'>
-            <Breadcrumb/>
             <section className={styles.aboutUsWrapper}>
                 <AboutUs inner={true}/>
             </section>

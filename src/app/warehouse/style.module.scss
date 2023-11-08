@@ -21,6 +21,7 @@
   background-image: url("../../../public/img/warehouse/background.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 
   &::after {
     content: '';
@@ -48,7 +49,7 @@
   padding-top: 5.802rem;
   padding-bottom: 6.368rem;
 
-  background-color: var(--background-orange);
+  background-color: var(--background-black);
 }
 
 .warehouseCards {
@@ -62,4 +63,39 @@
   & > div:nth-child(n+3) {
     margin-top: 9.625rem;
   }
+}
+
+.mailWrapper {
+  margin-bottom: 2.687rem;
+}
+
+.runningLineWrapper {
+  margin-top: 4.25rem;
+  margin-bottom: 6.937rem;
+
+  background-color: var(--background-gray);
+}
+
+.marqueeTitle {
+  padding-top: 7.625rem;
+  padding-bottom: 6.812rem;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 2rem;
+
+  span {
+    display: block;
+    color: var(--background-white);
+
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+
+    &:not(:last-child) {
+      margin-right: 9rem;
+    }
+  }
+
 }

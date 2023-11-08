@@ -1,6 +1,9 @@
 import styles from "./style.module.scss";
 import SectionTitle from "@/app/ui/uiKit/sectionTitle/sectionTitle";
 import WarehouseCard from "@/app/ui/uiKit/warehouseCard/warehouseCard";
+import MailSection from "@/app/ui/uiKit/mailSection/MailSection";
+import {InteractiveMarquee} from "@/app/ui/uiKit/infiniteMarquee";
+import {goldman} from "@/app/ui/fonts";
 
 export default function Page() {
     return (
@@ -69,12 +72,12 @@ export default function Page() {
             <div className={styles.warehouseOrange}>
                 <div className="page-container">
                     <div className={styles.warehouseCards}>
-                        <WarehouseCard icon={'truckTime'} title={'After Hours Services'}>
+                        <WarehouseCard theme={'light'} icon={'truckTime'} title={'After Hours Services'}>
                             Our cross-docking services are designed to facilitate the swift transfer of goods from
                             one transportation mode to another, reducing storage time and handling costs. This
                             efficient process ensures your goods move seamlessly through the supply chain.
                         </WarehouseCard>
-                        <WarehouseCard icon={'truckTime'} title={'Transloading'}>
+                        <WarehouseCard theme={'light'} icon={'truckTime'} title={'Transloading'}>
                             Our cross-docking services are designed to facilitate the swift transfer of goods from
                             one transportation mode to another, reducing storage time and handling costs. This
                             efficient process ensures your goods move seamlessly through the supply chain.
@@ -82,6 +85,16 @@ export default function Page() {
                     </div>
                 </div>
             </div>
+                <div className={styles.runningLineWrapper}>
+                    <InteractiveMarquee speed={2}>
+                        <h3 className={`${goldman.className} ${styles.marqueeTitle}`}>
+                            <span>trust</span>
+                            <span>EFFICIENT</span>
+                            <span>rELIABILITY</span>
+                            <span>Sustainability</span>
+                        </h3>
+                    </InteractiveMarquee>
+                </div>
         </section>
     )
 }

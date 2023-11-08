@@ -18,7 +18,7 @@
 
 .cardIcon {
   position: relative;
-  width: 4.625rem;
+  width: 4.125rem;
   margin-bottom: 2.125rem;
 
   &::before {
@@ -28,7 +28,7 @@
   }
 
   svg.light {
-    fill: var(--text-white);
+    fill: var(--text-orange);
   }
 
   svg.dark {
@@ -38,11 +38,13 @@
 }
 
 .cardTitle {
-  margin-bottom: 0.625rem;
+  //TODO
+  min-width: 26.812rem;
+  margin-bottom: 1.25rem;
 
-  font-size: 1.875rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  line-height: 1.96;
+  line-height: 2.45;
   letter-spacing: 1.8px;
   text-transform: capitalize;
   text-align: center;
