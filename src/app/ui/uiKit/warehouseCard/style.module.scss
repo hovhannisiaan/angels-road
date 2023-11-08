@@ -1,0 +1,55 @@
+.card {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 43.5%;
+
+  &.dark {
+    color: var(--text-black);
+  }
+
+  &.light {
+    color: var(--text-white);
+  }
+}
+
+.cardIcon {
+  position: relative;
+  width: 4.625rem;
+  margin-bottom: 2.125rem;
+
+  &::before {
+    content: "";
+    display: block;
+    padding-top: 89.189%;
+  }
+
+  svg.light {
+    fill: var(--text-white);
+  }
+
+  svg.dark {
+    fill: var(--text-black);
+  }
+
+}
+
+.cardTitle {
+  margin-bottom: 0.625rem;
+
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 1.96;
+  letter-spacing: 1.8px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.cardDesc {
+  font-size: 1.187rem;
+  font-weight: 300;
+  line-height: 1.89;
+}
