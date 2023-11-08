@@ -3,7 +3,7 @@
 import {useEffect, useRef, useState} from "react";
 import {useInView} from "framer-motion"
 
-export default function ZeroToValue({start = 0, number}: {number: number, start? :number}) {
+export default function ZeroToValue({start = 0, num}: {start? :number, num: number}) {
     const [value, setValue] = useState(start);
     const ref = useRef(null);
     const isInView = useInView(ref, {once: true});
@@ -23,7 +23,7 @@ export default function ZeroToValue({start = 0, number}: {number: number, start?
     }
 
     useEffect(() => {
-        animateValue(0, number, 2000);
+        animateValue(0, num, 2000);
     }, [isInView]);
 
     return (
