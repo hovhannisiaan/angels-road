@@ -1,0 +1,23 @@
+.contentBtn {
+  display: inline-flex;
+  padding: 1.25rem 2.687rem;
+
+  border: 2px solid var(--background-orange);
+  background-color: transparent;
+  color: var(--text-orange);
+  cursor: pointer;
+
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.64;
+  letter-spacing: 6.4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  transition: all var(--transition);
+
+  &:hover {
+    background-color: var(--background-orange);
+    color: var(--text-white);
+  }
+}

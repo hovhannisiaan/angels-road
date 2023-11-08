@@ -18,7 +18,8 @@
     "normalize-wheel": "^1.0.1",
     "react": "^18",
     "react-dom": "^18",
-    "react-use": "^17.4.0"
+    "react-use": "^17.4.0",
+    "swiper": "^11.0.3"
   },
   "devDependencies": {
     "@types/node": "^20",

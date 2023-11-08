@@ -13,7 +13,7 @@ export default function Contacts() {
             </div>
             <div className={styles.mail}>
                 <div className={styles.mailContent}>
-                    <MailContent />
+                    <MailContent color={'var(--text-gray-dark)'}/>
                     {/*<p className={`${oswald.className} ${styles.mailSubscribe}`}>subscribe</p>*/}
                     {/*<h3 className={`${oswald.className} ${styles.mailTitle}`}>join our newsletter</h3>*/}
                     {/*<p className={`${poppins.className} ${styles.mailDesc}`}>Good news & event details as well straight to your incoming mail!</p>*/}

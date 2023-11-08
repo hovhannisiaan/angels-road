@@ -20,20 +20,10 @@
   right: 125px;
   transform: translateY(-49%);
   width: 26.219%;
-  animation: circleText 4200ms linear infinite;
 
   &::before {
     content: '';
     display: block;
     padding-top: 100%;
-  }
-}
-
-@keyframes circleText {
-  from {
-    transform: translateY(-49%) rotate(0);
-  }
-  to {
-    transform: translateY(-49%) rotate(360deg);
   }
 }

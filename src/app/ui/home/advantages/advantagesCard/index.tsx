@@ -1,5 +1,6 @@
 import styles from "./style.module.scss";
 import React from "react";
+import {goldman, poppins} from "@/app/ui/fonts";
 
 type advantageCardProps = {
     title: string,
@@ -14,8 +15,8 @@ export default function AdvantagesCard({title, children} : advantageCardProps) {
                     <use xlinkHref="#guard" />
                 </svg>
             </div>
-            <h4 className={styles.cardTitle}>{title}</h4>
-            <p className={styles.cardText}>{children}</p>
+            <h4 className={`${goldman.className} ${styles.cardTitle}`}>{title}</h4>
+            <p className={`${poppins.className} ${styles.cardText}`}>{children}</p>
         </div>
     )
 }

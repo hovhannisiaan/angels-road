@@ -1,0 +1,66 @@
+.testimonialAuthor {
+  margin-bottom: 0.937rem;
+
+  color: var(--text-white);
+
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  cursor: default;
+}
+
+.testimonialVacation {
+  margin-bottom: 4rem;
+
+  color: var(--text-orange);
+
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  text-transform: capitalize;
+  cursor: default;
+}
+
+.testimonialText {
+  color: var(--text-white);
+
+  font-size: 1.125rem;
+  letter-spacing: 1.8px;
+  cursor: default;
+}
+
+.reviewSwiper {
+  padding-bottom: 7rem;
+
+  :global {
+    .swiper-pagination {
+      display: flex;
+      align-items: center;
+      top: unset !important;
+      bottom: 0 !important;
+
+    }
+
+    .swiper-pagination-bullet {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      opacity: 1;
+      background-color: var(--background-white);
+
+      &:not(:last-child) {
+        margin: 0 2rem 0 0;
+      }
+      &.swiper-pagination-bullet-active {
+        background-color: var(--background-orange);
+        border: 2px solid var(--background-white);
+        box-sizing: content-box;
+      }
+    }
+  }
+}
+
+.reviewSlide {
+
+}
