@@ -7,7 +7,7 @@ export default function FactsCard({number, children} : {number: number, children
     return (
         <div className={styles.card}>
             <div className={`${goldman.className} ${styles.cardNumber}`}>
-                <ZeroToValue number={number}/>
+                <ZeroToValue num={number}/>
             </div>
             <p className={`${poppins.className} ${styles.cardDesc}`}>
                 {children}

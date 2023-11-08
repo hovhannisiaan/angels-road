@@ -33,7 +33,6 @@ export default function Testimonial() {
                     <SectionTitle title={'what our clients says'} color={'white'} size={'small'}/>
                 </div>
                 <Review slides={slides}/>
-                <ZeroToValue/>
             </div>
         </section>
     )
