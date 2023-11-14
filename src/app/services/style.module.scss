@@ -1,0 +1,94 @@
+.servicesContainer {
+  margin-top: 10.187rem;
+  margin-bottom: 10.187rem
+}
+
+.servicesTitleWrapper {
+  margin-bottom: 4.125rem;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.serviceCard {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46.166%;
+  min-height: 19.875rem;
+  background-image: url("../../../public/img/warehouse/background.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-decoration: none;
+
+  &:hover .serviceCardTitle {
+    animation: cardAnim linear 300ms forwards;
+  }
+
+  &:hover .serviceCardButton {
+    display: block;
+    opacity: 1;
+    bottom: 0;
+    height: auto;
+    transition: opacity 300ms;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-gray);
+    opacity: 80%;
+  }
+}
+
+.serviceCardContent {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.serviceCardTitle {
+
+  color: var(--text-white);
+
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.47;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  transition: 300ms;
+}
+
+.serviceCardButton {
+  position: absolute;
+  height: 0;
+  opacity: 0;
+}
+
+@keyframes cardAnim {
+  from {
+    height: 3.675rem;
+  }
+  to {
+    height: 10.687rem;
+  }
+}
+
+.servicesMail {
+  width: 94.444%;
+  margin: 0 auto 5.187rem;
+}

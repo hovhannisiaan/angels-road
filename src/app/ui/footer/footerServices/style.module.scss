@@ -14,21 +14,12 @@
 }
 
 .linkItem {
-  &:not(:last-child) {
-    margin-bottom: 0.875rem;
-  }
-}
-
-.link {
   color: var(--text-gray);
 
   font-size: 0.937rem;
   font-weight: 500;
   line-height: 2;
-  text-decoration: none;
-  transition: color var(--transition);
-
-  &:hover {
-    color: var(--text-white);
+  &:not(:last-child) {
+    margin-bottom: 0.875rem;
   }
 }

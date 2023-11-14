@@ -1,0 +1,36 @@
+.transTop {
+  position: relative;
+  padding-top: 11.781rem;
+  padding-bottom: 3rem;
+  background-image: url("../../../../public/img/warehouse/background.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--text-white);
+    opacity: 80%;
+  }
+}
+
+.transContent {
+  position: relative;
+  z-index: 2;
+}
+
+.transTitle {
+  margin-bottom: 7.062rem;
+}
+
+.transCards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4.910rem;
+}

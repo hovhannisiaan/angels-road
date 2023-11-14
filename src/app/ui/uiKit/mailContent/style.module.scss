@@ -34,12 +34,22 @@
 }
 
 .mailForm {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
 }
 
 .mailLabel {
   position: relative;
   display: block;
+  width: 100%;
+  margin-bottom: 1.187rem;
+
+  &.mail {
+    width: 59.938%;
+    margin-bottom: 0;
+  }
 }
 
 .mailInput {
@@ -49,7 +59,7 @@
   color: inherit;
   border: 1px solid inherit;
   outline: none;
-  padding: 0.875rem 2.312rem 0.875rem 1.312rem;
+  padding: 1.375rem 1.187rem;
 
   background-color: transparent;
 
@@ -62,21 +72,6 @@
 }
 
 .mailBtn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 1.312rem;
-  width: 1.008rem;
-  height: 1.125rem;
-
-  padding: 0;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  outline: none;
-
-  svg {
-    width: 100%;
-    height: 100%;
-  }
+  width: 35.747%;
+  min-width: 200px;
 }

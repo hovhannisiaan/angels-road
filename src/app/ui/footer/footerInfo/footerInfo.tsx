@@ -1,7 +1,7 @@
 import styles from './style.module.scss';
 import logo from '../../../../../public/Logo.svg';
 import Image from "next/image";
-import {oswald, poppins} from "@/app/ui/fonts";
+import {goldman, oswald, poppins} from "@/app/ui/fonts";
 import Link from "next/link";
 
 export default function FooterInfo() {
@@ -15,7 +15,7 @@ export default function FooterInfo() {
                     width={103}
                 />
             </Link>
-            <h4 className={`${oswald.className} ${styles.footerInfoTitle}`}>Main office</h4>
+            <h4 className={`${goldman.className} ${styles.footerInfoTitle}`}>Main office</h4>
             <p className={`${poppins.className} ${styles.footerInfoDesc}`}>1111 46e avenue, US Bla bla bla
                 bla :D</p>
         </div>

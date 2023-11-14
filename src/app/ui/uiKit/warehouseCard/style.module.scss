@@ -8,7 +8,7 @@
   width: 43.5%;
 
   &.dark {
-    color: var(--text-black);
+    color: var(--text-gray-dark);
   }
 
   &.light {
@@ -32,7 +32,7 @@
   }
 
   svg.dark {
-    fill: var(--text-black);
+    fill: var(--text-gray-dark);
   }
 
 }

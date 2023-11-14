@@ -15,7 +15,7 @@ export default function Header() {
 
     useEffect(() => {
         path === '/' ? setInnerPage(false) : setInnerPage(true);
-        !innerPage ? setScrolled(false) : setScrolled(true);
+        // !innerPage ? setScrolled(false) : setScrolled(true);
 
         function checkScroll() {
             if (window.scrollY !== 0) {
@@ -25,12 +25,12 @@ export default function Header() {
             }
         }
 
-        if (innerPage) return
-        else {
-            window.addEventListener("scroll", checkScroll);
-            // Remove event listener on cleanup
-            return () => window.removeEventListener("scroll", checkScroll);
-        }
+        // if (innerPage) return
+        // else {
+        //     window.addEventListener("scroll", checkScroll);
+        //     // Remove event listener on cleanup
+        //     return () => window.removeEventListener("scroll", checkScroll);
+        // }
     }, [path, innerPage,]);
 
     return (

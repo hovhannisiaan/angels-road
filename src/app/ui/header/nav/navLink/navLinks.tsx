@@ -7,7 +7,7 @@ import {goldman, oswald, poppins} from "@/app/ui/fonts";
 
 const links = [
     {name: 'homepage', href: '/'},
-    {name: 'warehouse', href: '/warehouse'},
+    {name: 'services', href: '/services'},
     {name: 'about us', href: '/about-us'},
     {name: 'contacts', href: '/contacts'},
 ]

@@ -18,8 +18,8 @@ export default function SectionTitle({title, color = 'black', size = 'big'}: tit
     return (
         <>
             <motion.div
-                initial={{translateX: -100, opacity: 0}}
-                whileInView={{translateX: 0, opacity: 1}}
+                initial={{translateY: -100, opacity: 0}}
+                whileInView={{translateY: 0, opacity: 1}}
                 viewport={{once: true}}
                 transition={{duration: 0.8, ease: 'easeOut'}}
             >
@@ -34,8 +34,8 @@ export default function SectionTitle({title, color = 'black', size = 'big'}: tit
                 </h2>
             </motion.div>
             <motion.div
-                initial={{translateX: 100, opacity: 0}}
-                whileInView={{translateX: 0, opacity: 1}}
+                initial={{translateY: -100, opacity: 0}}
+                whileInView={{translateY: 0, opacity: 1}}
                 viewport={{once: true}}
                 transition={{duration: 0.8, ease: 'easeOut'}}
             >
